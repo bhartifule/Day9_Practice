@@ -1,27 +1,29 @@
 package com.bridgelabz;
 import java.util.PrimitiveIterator;
+import java.util.Scanner;
 
 public class AdressBook {
 	public static void main(String[] args) {
-        System.out.println("Welcome to Address Book Program");
-        AddressBookMain obj1 = new AddressBookMain();
-        obj1.setName("Bharti");
-        obj1.setSurname("Fule");
-        obj1.setAddress("Hingna Nagpur");
-        obj1.setCity("Nagpur");
-        obj1.setState("Maharastra");
-        obj1.setContactNumber("9146075923");
-        obj1.setEmail("shitalkarad@24gmail.com");
 
-        System.out.println("Name: " + obj1.getName());
-        System.out.println("Surname: " + obj1.getSurname());
-        System.out.println("Address: " + obj1.getAddress());
-        System.out.println("City: " + obj1.getCity());
-        System.out.println("State: " + obj1.getState());
-        System.out.println("ContactNumber: " + obj1.getContactNumber());
-        System.out.println("Email: " + obj1.getEmail());
+        Scanner sc = new Scanner(System.in);
+        AddressBookMain addBook = new AddressBookMain();
+        String start = "start";
+
+        System.out.println("Welcome to Address Book Program");
+        while(start.equals("start")){
+            System.out.println("if you want to add address press 1 if show address press 2");
+            int choice = sc.nextInt();
+            if(choice==1)
+                addBook.saveAddress();
+            else if (choice==2)
+                addBook.showMyAddress();
+            else
+                System.out.println("Chouse correct option ");
+        }
+
+    }
 
 
     }
 
-}
+
