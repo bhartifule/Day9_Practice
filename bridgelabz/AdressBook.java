@@ -11,7 +11,7 @@ public class AdressBook {
         obj1.setCity("Nagpur");
         obj1.setState("Maharastra");
         obj1.setContactNumber("9146075923");
-        obj1.setEmail("shitalkarad@24gmail.com");
+        obj1.setEmail("bharatifule10@gmail.com");
 
         System.out.println("Name: " + obj1.getName());
         System.out.println("Surname: " + obj1.getSurname());
